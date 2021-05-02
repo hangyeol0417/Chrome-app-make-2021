@@ -1,0 +1,183 @@
+.btn {
+    cursor: pointer;
+}
+
+html {
+    display: flex;
+    height: 90%;
+}
+
+body {
+    color: white;
+    background-color: rgb(182, 182, 182);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+.js-clock {
+    position: absolute;
+    top: 28%;
+    animation: fadeIn .5s linear;
+}
+
+.js-clock>h1 {
+    font-size: 100px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.js-greetings {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.js-form,
+.js-greetings {
+    margin-top: 400px;
+    animation: fadeIn .5s linear;
+}
+
+.js-form input,
+.js-toDoForm input {
+    margin: 15px;
+    border: none;
+    transition: .3s;
+    background-color: transparent;
+    color: currentColor;
+    outline: none;
+    border-bottom: 1.5px solid currentColor;
+    font-size: 15px;
+    width: 120px;
+}
+
+.js-toDoForm input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.js-form input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.js-toDoForm input:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.js-form input:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.js-form input {
+    width: 250px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.js-toDoForm input::placeholder,
+.js-form input::placeholder {
+    color: currentColor;
+}
+
+.js-toDoList,
+.js-finishesList {
+    font-size: 17px;
+    padding-left: 8px;
+}
+
+.js-toDoList button,
+.js-finishesList button {
+    background-color: transparent;
+    border: none;
+}
+
+h5 {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    animation: fadeIn .5s linear;
+}
+
+li {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn .5s linear;
+}
+
+.js-weather {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    animation: fadeIn .5s linear;
+}
+
+button {
+    font-weight: 900;
+    color: rgb(212, 0, 0);
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.photoBy {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+input {
+    animation: fadeIn .5s linear;
+}
